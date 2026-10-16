@@ -12,6 +12,11 @@
   <style>
     :root{--cream:#fff8f1;--paper:#fffdf9;--blush:#f5d9d9;--rose:#c96f82;--rose-dark:#8c4357;--gold:#bd9857;--ink:#49363a;--muted:#806d70;--line:#ead9d2;--shadow:0 18px 55px rgba(109,65,72,.12)}
     *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif;line-height:1.65} button,a{font:inherit} button{cursor:pointer} a{color:inherit} .serif{font-family:'Playfair Display',serif} .gu{font-family:'Noto Sans Gujarati','DM Sans',sans-serif}
+    .final-note{padding:68px 20px 76px;text-align:center;background:linear-gradient(135deg,#fff2ef,#fff9f0);border-top:1px solid var(--line)}
+    .final-note-inner{max-width:720px;margin:0 auto;padding:clamp(26px,5vw,48px);background:rgba(255,255,255,.72);border:1px solid #e9d5ca;border-radius:26px;box-shadow:var(--shadow)}
+    .final-note h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3rem);font-weight:500;margin:8px 0 14px;color:var(--rose-dark)}
+    .final-note p{font-size:1.08rem;margin:8px 0;color:var(--muted)}
+    .final-note .highlight{display:inline-block;margin-top:12px;padding:12px 18px;border:1px dashed var(--gold);border-radius:14px;background:#fffaf0;color:var(--rose-dark);font-weight:600}
     .topbar{position:fixed;z-index:20;top:0;left:0;right:0;display:flex;align-items:center;justify-content:space-between;padding:14px clamp(18px,5vw,64px);background:rgba(255,248,241,.86);backdrop-filter:blur(14px);border-bottom:1px solid rgba(234,217,210,.7)}
     .brand{font-family:'Playfair Display',serif;font-size:1rem;letter-spacing:.03em}.brand span{color:var(--rose)} .music-btn,.pill-btn{border:1px solid var(--line);border-radius:999px;background:#fffaf8;color:var(--rose-dark);padding:10px 16px;transition:.2s}.music-btn:hover,.pill-btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px #c96f821a}.music-btn{font-size:.85rem}
     .hero{min-height:100svh;display:grid;place-items:center;position:relative;overflow:hidden;padding:115px 20px 70px;background:radial-gradient(ellipse at 15% 20%,#f8e6e3 0,transparent 38%),radial-gradient(ellipse at 90% 75%,#f1dfbd 0,transparent 35%),linear-gradient(135deg,#fffaf4,#fff0ef)}
@@ -52,28 +57,28 @@
       <div class="section-inner">
         <div class="section-head"><div class="kicker">Little moments, big feelings</div><h2>Our story in memories</h2><p>Some moments become precious simply because I got to share them with you.</p></div>
         <div class="memory-grid">
-          <article class="memory-card" style="--tilt:-1.5deg"><div class="photo-wrap"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=85" alt="Wedding celebration placeholder" loading="lazy"></div><div class="memory-title">The day our story began</div><p class="memory-caption">A new chapter, a thousand little dreams.</p></article>
-          <article class="memory-card" style="--tilt:1.2deg"><div class="photo-wrap"><img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=85" alt="Celebration placeholder" loading="lazy"></div><div class="memory-title">Our special celebrations</div><p class="memory-caption">Festivals feel warmer when we're together.</p></article>
-          <article class="memory-card" style="--tilt:-.7deg"><div class="photo-wrap"><img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=900&q=85" alt="Couple holding hands placeholder" loading="lazy"></div><div class="memory-title">Little moments with you</div><p class="memory-caption">The ordinary becomes special with you.</p></article>
-          <article class="memory-card" style="--tilt:1.5deg"><div class="photo-wrap"><img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=900&q=85" alt="Romantic couple placeholder" loading="lazy"></div><div class="memory-title">My favourite person</div><p class="memory-caption">Your smile can soften my busiest day.</p></article>
-          <article class="memory-card" style="--tilt:-1.1deg"><div class="photo-wrap"><img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=900&q=85" alt="Travel scenery placeholder" loading="lazy"></div><div class="memory-title">Places we'll go</div><p class="memory-caption">So many roads, so many memories still to make.</p></article>
-          <article class="memory-card" style="--tilt:.8deg"><div class="photo-wrap"><img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=900&q=85" alt="Romantic flowers placeholder" loading="lazy"></div><div class="memory-title">Always choosing us</div><p class="memory-caption">Not perfect, just two hearts learning together.</p></article>
+          <article class="memory-card" style="--tilt:-1.5deg"><div class="photo-wrap"><img src="images/mirror-selfie.jpg" alt="A mirror selfie beneath the red blossoms" loading="lazy"></div><div class="memory-title">A mirror selfie beneath the red blossoms</div><p class="memory-caption">A simple little moment, made special because we were together.</p></article>
+          <article class="memory-card" style="--tilt:1.2deg"><div class="photo-wrap"><img src="images/yellow-house-trip.jpg" alt="A little trip together" loading="lazy"></div><div class="memory-title">A little trip together</div><p class="memory-caption">Different places, the same happiness of having you beside me.</p></article>
+          <article class="memory-card" style="--tilt:-.7deg"><div class="photo-wrap"><img src="images/rainbow-wall.jpg" alt="Our colourful little world" loading="lazy"></div><div class="memory-title">Little moments, endless memories</div><p class="memory-caption">It doesn't take a special occasion to make a memory. Sometimes, all I need is you beside me and an ordinary moment becomes unforgettable.</p></article>
+          <article class="memory-card" style="--tilt:1.5deg"><div class="photo-wrap"><img src="images/misty-hills.jpg" alt="A misty view and my favourite person" loading="lazy"></div><div class="memory-title">A misty view and my favourite person</div><p class="memory-caption">Green hills, cloudy skies, and a memory I’ll always smile about.</p></article>
+          <article class="memory-card" style="--tilt:-1.1deg"><div class="photo-wrap"><img src="images/flower-bicycle.jpg" alt="Flowers, a bicycle, and us" loading="lazy"></div><div class="memory-title">Flowers, a bicycle, and us</div><p class="memory-caption">A playful little outing that deserves a place in our story.</p></article>
+          <article class="memory-card" style="--tilt:.8deg"><div class="photo-wrap"><img src="images/boat-ride.jpg" alt="Our boat-ride memory" loading="lazy"></div><div class="memory-title">Our boat-ride memory</div><p class="memory-caption">Side by side, collecting moments and dreaming about the next adventure.</p></article>
         </div>
-        <p class="edit-note">These are sample photos. Replace them with your own favourite memories before sharing.</p>
+        <p class="edit-note"></p>
       </div>
     </section>
 
     <section class="content-section letter-section" id="letter">
       <div class="section-inner">
-        <div class="section-head"><div class="kicker">A little surprise for you</div><h2 class="gu">તને પસંદ કરવાનાં ૮ કારણો</h2><p>આ પત્ર નથી—આપણી ૮ મહિનાની સફરની ૮ નાની યાદ અપાવણીઓ છે. દરેક કાર્ડ પર ટૅપ કરજે. ❤️</p></div>
+        <div class="section-head"><div class="kicker">A little surprise for you</div><h2 class="gu">તને પસંદ કરવાનાં ૮ કારણો</h2><p>આપણી ૮ મહિનાની સફરની ૮ નાની યાદ અપાવણીઓ છે. દરેક કાર્ડ પર ટૅપ કરજે. ❤️</p></div>
         <p class="reasons-intro gu">કોઈ એક મોટું કારણ નથી કે જેના માટે હું તને પ્રેમ કરું છું. તારી નાની નાની વાતો, તારા સપનાં અને તારી સાથેની રોજિંદી પળો—આ બધું મળીને તને મારા માટે ખાસ બનાવે છે.</p>
         <div class="reasons-grid">
           <button class="reason-card" type="button" aria-expanded="false"><span class="reason-icon">😊</span><span class="reason-number">01 · A LITTLE THING</span><h3>Your smile</h3><p class="reason-hidden gu">તારું સ્મિત મારા સામાન્ય દિવસને પણ ખાસ બનાવી દે છે. તું ખુશ હોય ત્યારે ઘર પણ વધુ સુંદર લાગે છે.</p></button>
           <button class="reason-card" type="button" aria-expanded="false"><span class="reason-icon">💄</span><span class="reason-number">02 · SO YOU</span><h3>Your little obsessions</h3><p class="reason-hidden gu">તારી લિપસ્ટિક, વાળની કાળજી અને તારો સ્ટાઇલ—તારી આ નાની નાની વાતો મને તારી વધુ નજીક લાવે છે.</p></button>
-          <button class="reason-card" type="button" aria-expanded="false"><span class="reason-icon">🌱</span><span class="reason-number">03 · YOUR DREAMS</span><h3>Your ambition</h3><p class="reason-hidden gu">તું તારા માટે કંઈક પોતાનું બનાવવા માગે છે. તારા સપનાંને ઉડાન મળે એ માટે હું તારી બાજુમાં રહેવા માગું છું.</p></button>
+          <button class="reason-card" type="button" aria-expanded="false"><span class="reason-icon">🌱</span><span class="reason-number">03 · YOUR DREAMS</span><h3>Your ambition</h3><p class="reason-hidden gu">તું તારા માટે કંઈક પોતાનું બનાવવા માગે છે. તારા સપનાંને ઉડાન મળે એ માટે હું તારી બાજુમાં રહેવા માગું છું. - Business Plan</p></button>
           <button class="reason-card" type="button" aria-expanded="false"><span class="reason-icon">🤍</span><span class="reason-number">04 · YOUR HEART</span><h3>Your care</h3><p class="reason-hidden gu">તું જેને પ્રેમ કરે છે, તેના માટે તારા મનમાં કેટલી લાગણી હોય છે—એ વાત મને વારંવાર સમજાય છે.</p></button>
           <button class="reason-card" type="button" aria-expanded="false"><span class="reason-icon">🪔</span><span class="reason-number">05 · OUR FAITH</span><h3>Praying together</h3><p class="reason-hidden gu">ગણપતિ ચતુર્થી સાથે ઉજવવાની આપણી યાદ મને યાદ અપાવે છે કે શ્રદ્ધા અને પ્રેમ સાથે હોય તો પળો ખાસ બની જાય છે.</p></button>
-          <button class="reason-card" type="button" aria-expanded="false"><span class="reason-icon">📸</span><span class="reason-number">06 · OUR MEMORIES</span><h3>Our little world</h3><p class="reason-hidden gu">આપણા ફોટા, મસ્તી, ફરવાના પ્લાન અને નાની નાની વાતો—આપણી કહાનીનો દરેક ભાગ મને વહાલો છે.</p></button>
+          <button class="reason-card" type="button" aria-expanded="false"><span class="reason-icon">🏡</span><span class="reason-number">06 · PROJECT TRINITY</span><h3>Our little dream world</h3><p class="reason-hidden gu">થૅમ્સી, આપણું એક સપનું છે — એક એવું ઘર, જ્યાં દરવાજો ખોલતાં જ શાંતિ મળે, તારા ચહેરા પર સ્મિત હોય અને આપણને લાગે કે હા, આ જ છે આપણું પોતાનું નાનકડું વિશ્વ.</p></button>
           <button class="reason-card" type="button" aria-expanded="false"><span class="reason-icon">💬</span><span class="reason-number">07 · US GROWING</span><h3>What we are learning</h3><p class="reason-hidden gu">આપણે હજી એકબીજાને શીખી રહ્યાં છીએ. મને ગમે છે કે આપણે સાથે મળીને વધુ સમજદાર અને પ્રેમાળ બની શકીએ છીએ.</p></button>
           <button class="reason-card" type="button" aria-expanded="false"><span class="reason-icon">♾️</span><span class="reason-number">08 · ALWAYS</span><h3>Choosing you</h3><p class="reason-hidden gu">આઠ મહિના પછી પણ મારી પસંદગી તું જ છે. આવનારા દરેક અધ્યાયમાં તારો હાથ પકડીને સાથે ચાલવું છે.</p></button>
         </div>
@@ -106,13 +111,22 @@
       </div>
     </section>
   </main>
+
+    <section class="final-note" id="letter-8">
+      <div class="final-note-inner">
+        <div class="kicker">A little note just for you</div>
+        <h2>Dear Themsi, ❤️</h2>
+        <p>You need to come here to see <strong>Letter 8.0</strong> and your surprise gift.</p>
+        <div class="highlight">Your next surprise is waiting for you… 💌🎁</div>
+      </div>
+    </section>
   <footer class="footer">Made with <span>♥</span> by Keval, for Themsi · Our story is still unfolding.</footer>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
   <script>
     const $ = (s) => document.querySelector(s);
     const toast = (message) => { const el = $('#toast'); el.textContent = message; el.classList.add('show'); window.setTimeout(() => el.classList.remove('show'), 2600); };
-    $('#openBtn').addEventListener('click', () => { $('#memories').scrollIntoView({behavior:'smooth'}); sprinkle(24); });
+    $('#openBtn').addEventListener('click', async () => { $('#memories').scrollIntoView({behavior:'smooth'}); sprinkle(24); const audio = $('#bgMusic'); const btn = $('#musicBtn'); if (audio.paused) { try { await audio.play(); btn.textContent = '♫ Pause our song'; btn.setAttribute('aria-pressed','true'); } catch (e) { toast('Add your song as music.mp3 beside index.html, then tap Play our song.'); } } });
     $('#revealBtn').addEventListener('click', () => { const box = $('#revealMessage'); box.classList.toggle('open'); $('#revealBtn').textContent = box.classList.contains('open') ? 'My promise is yours ❤️' : 'Open my final promise 💌'; if (box.classList.contains('open')) sprinkle(65); });
     $('#musicBtn').addEventListener('click', async () => { const audio = $('#bgMusic'); const btn = $('#musicBtn'); if (audio.paused) { try { await audio.play(); btn.textContent = '♫ Pause our song'; btn.setAttribute('aria-pressed','true'); } catch (e) { toast('Add a music.mp3 file beside index.html to play your song.'); } } else { audio.pause(); btn.textContent = '♫ Play our song'; btn.setAttribute('aria-pressed','false'); } });
     document.querySelectorAll('.reason-card').forEach((card) => { card.addEventListener('click', () => { const open = card.classList.toggle('open'); card.setAttribute('aria-expanded', String(open)); }); });
